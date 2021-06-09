@@ -1,0 +1,26 @@
+on: push
+name: Deploy Amaxteur
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v2
+    
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: amaxteur.art
+        username: amaxteur
+        password: ${{ secrets.ftp_password }}
+        port: 21
+        server-dir: ./public_html/
+        exclude: .git*
+          - **.git*
+          - .git*/**
+          -  **/.git*/**
+          -  **/.resourses*/**
+          -  **/.vs*/**
+          - **/img/**
+          - **/fonts/**
