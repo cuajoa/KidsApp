@@ -1,0 +1,23 @@
+{
+    "name": "kidsapp",
+    "version": "1.0.0",
+    "description": "Aplicación de juegos para chicos",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "electron src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cuajoa/KidsApp.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/cuajoa/KidsApp/issues"
+    },
+    "homepage": "https://github.com/cuajoa/KidsApp#readme",
+    "dependencies": {
+        "electron": "^13.1.2"
+    }
+}

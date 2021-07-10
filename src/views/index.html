@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIDS App</title>
+    <link rel="stylesheet" href="https://amaxteur.art/valen/styles/style.css">
+    <link rel="stylesheet" href="https://amaxteur.art/valen/styles/kids.css">
+    <link rel="stylesheet" href="https://amaxteur.art/valen/styles/slider-pro.min.css">
+
+
+    <link rel="icon" href="https://amaxteur.art/valen/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://amaxteur.art/valen/scripts/script.js"></script>
+    <script type="text/javascript" src="https://amaxteur.art/valen/scripts/parallax.min.js"></script>
+</head>
+
+<body class="full-screen-preview" onresize="resize();">
+
+
+    <section id="slider" class="section-block-wrapper">
+
+        <div class="parallax_bg hidden-sm hidden-xs">
+            <ul id="scene" class="scene" data-scalar-x="0" data-scalar-y="4">
+
+                <li class="layer" data-depth="0.00" style="transform: translate3d(290px, 0, 0px); transform-style: preserve-3d; ">
+                    <img id="sun" src="https://amaxteur.art/valen/img/sun.png" alt=""></li>
+                <li class="layer" data-depth="0.20" style="transform: translate3d(90.9341px, 250px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                    <img id="globe" src="https://amaxteur.art/valen/img/globe_2.png" alt=""></li>
+                <li class="layer" data-depth="0.30" style="transform: translate3d(100px, -90px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                    <img id="cloud" src="https://amaxteur.art/valen/img/clouds_2.png" alt=""></li>
+            </ul>
+        </div>
+        <div id="overlay_slider_land" class="overlay_slider_land"></div>
+        <div class="container" id="containergeneral">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+
+                    <div id="slider_home" class="slider-pro sp-horizontal" style="width: 100%; max-width: 1120px;">
+                        <div class="sp-slides-container">
+                            <div id="imgloader" class="sp-mask sp-grab" style="height: 397px; transition: height 0.7s ease 0s; width: 1120px;">
+                                <img src="" id="image" />
+                            </div>
+                        </div>
+                        <div id="container" class="sp-layer sp-static slide_block_text" data-position="bottomLeft" data-horizontal="40" data-vertical="57" data-show-delay="400" data-hide-delay="400" data-layer-init="true" style="display: none;">
+                            <h3 id="textSpan"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio controls id="audio" style="width:95%; display:none;" rel="noreferrer">
+            <source src="" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <div id="overlaySun" onclick="playAudio('s')"></div>
+    <div id="overlayDog" onclick="playAudio('p')"></div>
+    <div id="overlayTor" onclick="playAudio('to')"></div>
+    <div id="overlayBaloon" onclick="playAudio('glo')"></div>
+    <div id="overlayArc" onclick="playAudio('arc')"></div>
+    <div id="overlayCie" onclick="playAudio('cie')"></div>
+    <div id="overlayNube" onclick="playAudio('nube')"></div>
+</body>
+
+</html>

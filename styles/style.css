@@ -1,0 +1,152 @@
+body {
+    background-color: #9ae1ff;
+}
+
+.rainbow {
+    font-size: 15rem;
+    /* font-family: monospace;
+    margin-top: 12%; */
+    text-align: center;
+}
+
+#imgloader {
+    text-align: center;
+}
+
+#image {
+    height: 100%;
+}
+
+#textSpan {
+    text-transform: uppercase;
+    font-size: 3rem;
+    z-index: 100;
+    color: #000;
+}
+
+.rainbow_text_animated {
+    color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.V {
+    background: linear-gradient(45deg, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff, #fbff00, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow_animation 8s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+.A {
+    background: linear-gradient(to left, #fff566, #ff0000, #a272ee, #44ff33, #5fbfcc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow_animation 5s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+.L {
+    background: linear-gradient(to right, #66f5ff, #ff00ff, #fbff00, #1b2fe4, #66ff6e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow_animation 9s ease-in-out infinite;
+    background-size: 200% 100%;
+}
+
+.E {
+    background: linear-gradient(125deg, #8425f0, #0099ff, #00ff00, #ff3399, #4f4fd8, #fbff00, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow_animation 7s ease-in-out infinite;
+    background-size: 200% 100%;
+}
+
+.N {
+    background: linear-gradient(to right, #66f5ff, #ff0015, #fbff00, #ff3399, #66ff6e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow_animation 9s ease-in-out infinite;
+    background-size: 200% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+#overlaySun {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    top: 40px;
+    left: 190px;
+    cursor: pointer;
+    z-index: 30000;
+}
+
+#overlayDog {
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    bottom: 15px;
+    right: 240px;
+    cursor: pointer;
+    z-index: 30000;
+}
+
+#overlayTor {
+    position: absolute;
+    width: 78px;
+    height: 130px;
+    bottom: 13px;
+    left: 257px;
+    cursor: pointer;
+    z-index: 30000;
+}
+
+#overlayBaloon {
+    position: absolute;
+    width: 180px;
+    height: 220px;
+    top: 260px;
+    left: 0;
+    z-index: 30000;
+    cursor: pointer;
+}
+
+#overlayArc {
+    position: absolute;
+    width: 120px;
+    height: 270px;
+    bottom: 200px;
+    right: 170px;
+    z-index: 30000;
+    cursor: pointer;
+    transform: rotateY(0deg) rotate(45deg);
+}
+
+#overlayCie {
+    position: absolute;
+    width: 420px;
+    height: 200px;
+    top: 100px;
+    left: 400px;
+    z-index: 30000;
+    cursor: pointer;
+}
+
+#overlayNube {
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    top: 390px;
+    left: 570px;
+    z-index: 30000;
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+AUTO----
+BARCO---
+CASA/CABALLO---
+FOCA
+GATO----
+LEON---
+MONO/MOTO---
+
+OSO----
+PERRO---
+
+RATA
+SOL/SAPO
+TRACTOR----
+VACA----
+
+ZORRO----
