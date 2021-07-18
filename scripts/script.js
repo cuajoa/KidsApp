@@ -93,7 +93,7 @@ function playAudio(key) {
             text = "queso";
             break;
         case "r":
-            text = "reloj";
+            text = "robot";
             break;
         case "s":
             text = "sol";
